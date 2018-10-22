@@ -16,15 +16,15 @@ and then it compares their R-squared score.
    sudo apt install python3-pip
 ```
 
-Python libraries: 
-- pyspark: ```pip3 install pyspark```
-- sparkts: ```pip3 install sparkts```
-- ts-flint (see the [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
-- numpy: ```pip3 install numpy```
-- pandas: ```pip3 install pandas```
-- sklearn: ```pip3 install sklearn```
-- pyramid-arima: ```pip3 install pyramid-arima```
-- matplotlib: ```pip3 install matplotlib```
+- Python libraries: 
+  - pyspark: ```pip3 install pyspark```
+  - sparkts: ```pip3 install sparkts```
+  - ts-flint (see the [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
+  - numpy: ```pip3 install numpy```
+  - pandas: ```pip3 install pandas```
+  - sklearn: ```pip3 install sklearn```
+  - pyramid-arima: ```pip3 install pyramid-arima```
+  - matplotlib: ```pip3 install matplotlib```
 
 ## How to run
 1. Clone the repository:
