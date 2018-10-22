@@ -12,7 +12,7 @@ and then it compares their R-squared score.
 Python libraries (installed via ```pip3```):
 - pyspark 
 - sparkts
-- ts-flint (please see its [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
+- ts-flint (see its [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
 - numpy
 - pandas
 - sklearn
