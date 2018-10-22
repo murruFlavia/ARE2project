@@ -10,6 +10,7 @@ from sklearn.metrics import r2_score
 def read_data(path):
 
     sc = SparkContext.getOrCreate()
+    sc.setLogLevel("ERROR")
     sql_context = SQLContext.getOrCreate(sc=sc)
 
     created_at = pd.read_csv(path)
@@ -42,7 +43,7 @@ def arima_ts(df):
 
     x = _java2py(sc, prev)[len(tr):]
 
-    print("ARIMA spark-ts R2: ", r2_score(te, x))
+    #print("ARIMA spark-ts R2: ", r2_score(te, x))
 
     test = test.toPandas()
     test = test.set_index('date')
@@ -54,3 +55,5 @@ def arima_ts(df):
 
     pd.concat([test, x], axis=1).plot()
     pd.concat([df, x], axis=1).plot()
+
+    return r2_score(te, x)

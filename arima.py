@@ -1,8 +1,6 @@
 from matplotlib import pyplot
 import pandas as pd
-import numpy
 import statsmodels.api as sm
-from pylab import rcParams
 from pyramid.arima import auto_arima
 from sklearn.metrics import r2_score
 
@@ -52,4 +50,4 @@ def predict(ts):
     real = test.values
     arima_r2 = r2_score(real, arima_forecast)
 
-    print("Pyramid ARIMA R2: ", arima_r2)
+    return arima_r2

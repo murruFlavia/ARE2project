@@ -14,6 +14,7 @@ def date_parser(fmt):
 
 def read_data(path):
     sc = SparkContext.getOrCreate()
+    sc.setLogLevel("ERROR")
     sqlContext = SQLContext.getOrCreate(sc)
     fc = ts.flint.FlintContext(sqlContext)
 
@@ -26,4 +27,5 @@ def read_data(path):
 
 def linear_regression(df):
     model = df.summarize(ts.flint.summarizers.linear_regression('item_cnt_day', []))
-    print("Linear regression R2: ", model.select('rSquared').collect())
+    #print("Linear regression R2: ", model.select('rSquared').collect())
+    return model.select('rSquared').collect()
