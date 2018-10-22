@@ -16,7 +16,7 @@ Python libraries (installed via ```pip3```):
 - numpy
 - pandas
 - sklearn
-- pyramid.arima
+- pyramid-arima
 - matplotlib
 
 ## How to run
