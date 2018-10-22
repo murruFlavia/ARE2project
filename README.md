@@ -7,17 +7,23 @@ For the prediction, it uses [spark-ts](https://github.com/sryza/spark-timeseries
 and then it compares their R-squared score. 
 
 ## Requirements
-- Python 3.6 
+- Ubuntu 18.04
+- Python 3.6 with pip:
 
-Python libraries (installed via ```pip3```):
-- pyspark 
-- sparkts
-- ts-flint (see its [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
-- numpy
-- pandas
-- sklearn
-- pyramid-arima
-- matplotlib
+```sudo apt-get update
+   sudo apt-get install python3.6  
+   sudo apt install python3-pip
+```
+
+Python libraries: 
+- pyspark: ```pip3 install pyspark```
+- sparkts: ```pip3 install sparkts```
+- ts-flint (see the [installation guide](https://github.com/twosigma/flint/blob/master/python/README.md))
+- numpy: ```pip3 install numpy```
+- pandas: ```pip3 install pandas```
+- sklearn: ```pip3 install sklearn```
+- pyramid-arima: ```pip3 install pyramid-arima```
+- matplotlib: ```pip3 install matplotlib```
 
 ## How to run
 1. Clone the repository:
