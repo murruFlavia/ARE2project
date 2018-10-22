@@ -10,7 +10,8 @@ and then it compares their R-squared score.
 - Ubuntu 18.04
 - Python 3.6 with pip:
 
-```sudo apt-get update
+```
+   sudo apt-get update
    sudo apt-get install python3.6  
    sudo apt install python3-pip
 ```
