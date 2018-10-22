@@ -9,7 +9,7 @@ and then it compares their R-squared score.
 ## Requirements
 - Python 3.6 
 
-Python libraries:
+Python libraries (installed via ```pip3```):
 - pyspark 
 - sparkts
 - ts-flint
